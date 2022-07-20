@@ -8,7 +8,7 @@ const Foo = () => {
     useEffect(() => {
         const getSchools = async() => {
             const res = await axios.get("http://localhost:8080/api/schools/");
-            console.log(res.data[1]);
+            console.log(res.data[0]);
         }
         getSchools();
     }, [])
